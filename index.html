@@ -97,6 +97,42 @@
     </section>
 
     <!--Topic at glance-->
+    <section id="topics">
+        <div class="container-md">
+          <div class="text-center">
+            <h2>Inside the book</h2>
+            <p class="lead text-muted"> A quick glance at the topics you wil learn</p>
+          </div>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+              <img src="/assets/kindle.png" class = "img-fluid" alt="me">
+            </div>
+            <!--Acordion-->
+            <!-- data-bs-toggle="collapse" da la orden de colapsar-->
+            <!--aria-expanded="true" establece que por defecto esta abierta-->
+            <!--aria-expanded="true" establece que por defecto esta abierta-->
+            <!--data-bs-target="#chapter-1" dice que colapsara aquella division que tenga id chapter 1
+            debe haber una DIV con id chapter 1-->
+            <div class="accordion" id = "chapters" >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1" >Chapter -1 Something Something</button>
+                </h2>
+                <!--item colapsable-->
+                <!--collapse show indica que al cargar la pagina se mostrara este elemento-->
+                <!--data-bs-parent="#chapters" liga este elemento con el elemento padre-->
+                <div id="chapter-1" class="accordion-colapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quos vel, cupiditate, 
+                  laborum est doloribus autem dolore rem voluptate soluta vitae inventore nemo? 
+                  Voluptatem, at corrupti cum molestias quasi minus!</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+
+    </section>
 
     
     <!--Navbar-->
